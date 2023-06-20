@@ -1,13 +1,85 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;700&display=swap");
+
+* {
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  transition: all 400ms;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: "Rubik", sans-serif;
+  color: #343a40;
+  line-height: 1;
+}
+
+.App {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  display: inline-block;
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+.wrapper {
+  padding: 30px 50px;
+  background-color: #c4b4d1;
+  border: 1px solid #837291;
+  border-radius: 10px;
+}
+
+.input-group {
+  padding: 20px;
+  background-color: #837291;
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.input-group h3 {
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+}
+
+.input-group input,
+.input-group select {
+  margin-top: 10px;
+  font-size: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+.result {
+  display: inline-block;
+  text-align: center;
+  padding: 0.5em;
+  width: 100%;
+  font-size: 40px;
+  font-weight: 700;
+  color: #8c00ff;
+}
+
+.result em {
+  font-size: 20px;
+  color: rgb(199, 70, 70);
+}
+
+.reset-btn {
+  border: 1px solid #8c00ff;
+  color: white;
+  background-color: #963be0;
+  padding: 0.2em 0.5em;
+  font-size: 30px;
+  width: 100%;
+  border-radius: 20px;
+}
+.reset-btn:hover,
+.reset-btn:active {
+  background-color: #622991;
 }
